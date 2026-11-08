@@ -4,10 +4,10 @@ PKG_NAME:=ucode-mod-lvgl
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/blogic/ucode-mod-lvgl.git
-PKG_MIRROR_HASH:=96278a9e4d7370c095d4eb9e540d0fb0b56d06f489df61675e23d5e25565d7d8
-PKG_SOURCE_DATE:=2026-08-19
-PKG_SOURCE_VERSION:=b3ea3d46d5fa0eebeeb80f27b896dcdb3d3bdc77
+PKG_SOURCE_URL:=https://github.com/tioan/ucode-mod-lvgl.git
+PKG_MIRROR_HASH:=skip
+PKG_SOURCE_DATE:=2026-11-08
+PKG_SOURCE_VERSION:=4b6be68c18126b583ebfc15a66ba7ae1f84b27e3
 
 PKG_BUILD_DEPENDS:=lvgl
 
