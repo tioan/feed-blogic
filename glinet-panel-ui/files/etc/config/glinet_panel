@@ -6,8 +6,9 @@ config panel
 	# backlight off
 	option idle_mode 'on'
 
-	# six digits, asked for on the way out of idle. leave it out for no
-	# keypad. anything else is refused and logged
+	# 4 to 8 digits, asked for on the way out of idle. leave it out for no
+	# keypad. anything else is logged, and the private pages stay shut until
+	# it is fixed
 	#option pin '123456'
 
 	# 10 to 100. the brightness page writes this back
