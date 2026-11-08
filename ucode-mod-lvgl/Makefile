@@ -35,8 +35,10 @@ lv.image_load().
 endef
 
 define Package/ucode-mod-lvgl/install
-	$(INSTALL_DIR) $(1)/usr/lib/ucode
+	$(INSTALL_DIR) $(1)/usr/lib/ucode $(1)/usr/share/ucode $(1)/usr/share/lvgl
 	$(CP) $(PKG_INSTALL_DIR)/usr/lib/ucode/lv.so $(1)/usr/lib/ucode/
+	$(CP) $(PKG_INSTALL_DIR)/usr/share/ucode/lvgl $(1)/usr/share/ucode/
+	$(CP) $(PKG_INSTALL_DIR)/usr/share/lvgl/. $(1)/usr/share/lvgl/
 endef
 
 $(eval $(call BuildPackage,ucode-mod-lvgl))
